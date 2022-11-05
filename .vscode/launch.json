@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch a 'Get Coverage Mode(Excel)'",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\get-coverages.js",
+            "args": ["-c","user_config_test.yaml"]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch a 'Get Coverage Mode(Stdout)'",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\get-coverages.js",
+            "args": ["-c","user_config_test.yaml", "-s"]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch a 'Execute Apex Test Mode'",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\get-coverages.js",
+            "args": ["-c","user_config_test.yaml", "-t"]
+        }
+    ]
+}

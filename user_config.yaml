@@ -1,0 +1,27 @@
+# Salesforce connection information
+loginUrl: "https://test.salesforce.com"
+apiVersion : "56.0"
+userName: "(LOGIN USER NAME)"
+password: "(LOGIN PASSWORD)"
+# Template excel file path
+templateFilePath: "template.xlsx"
+# Result excel file path
+resultFilePath: "result.xlsx"
+# Warning coverage rate and output color
+warningPercent: 0.90
+warningColor: "fff2cc"
+# Fatal coverage rate and output color
+fatalPercent: 0.75
+fatalColor: "ffcccc"
+# Output character when below the coverage rate boundary
+belowMark: "〇"
+# Specifies apex classes to output coverage rate(If empty, all apex classes are targeted)
+#targetApexClass: [
+#  ChangePasswordController, 
+#  CommunitiesLoginController, 
+#]
+# Specifies apex test classes to execute test(If empty, all apex test classes are targeted)
+#targetApexTestClass: [
+#  ChangePasswordControllerTest, 
+#  CommunitiesLoginControllerTest,
+#]
